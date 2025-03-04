@@ -1,0 +1,10 @@
+from gtts import gTTS
+import os
+import playsound
+
+def speak_text(text):
+    tts = gTTS(text=text, lang='en')
+    playsound.playsound("output.mp3")  # Play the sound
+
+# Example usage:
+speak_text("Hello! T-Pose detected!")

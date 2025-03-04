@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  yoga-pose-app:
+    image: yoga-pose-app:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
